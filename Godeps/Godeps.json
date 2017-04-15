@@ -1,52 +1,80 @@
 {
-	"ImportPath": "authz",
-	"GoVersion": "go1.5.1",
+	"ImportPath": "github.com/twistlock/authz",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
 		{
+			"ImportPath": "github.com/Microsoft/go-winio",
+			"Comment": "v0.3.8",
+			"Rev": "fff283ad5116362ca252298cfc9b95828956d85d"
+		},
+		{
 			"ImportPath": "github.com/Sirupsen/logrus",
-			"Comment": "v0.8.7-53-g446d1c1",
-			"Rev": "446d1c146faa8ed3f4218f056fcd165f6bcfda81"
+			"Comment": "v0.11.0-35-g61e43dc",
+			"Rev": "61e43dc76f7ee59a82bdf3d71033dc12bea4c77d"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus/hooks/syslog",
+			"Comment": "v0.11.0-35-g61e43dc",
+			"Rev": "61e43dc76f7ee59a82bdf3d71033dc12bea4c77d"
 		},
 		{
 			"ImportPath": "github.com/codegangsta/cli",
-			"Comment": "1.2.0-139-g142e6cd",
-			"Rev": "142e6cd241a4dfbf7f07a018f1f8225180018da4"
+			"Comment": "v1.19.1-28-g8ba6f23",
+			"Rev": "8ba6f23b6e36d03666a14bd9421f5e3efcb59aca"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Comment": "v1.1.0",
+			"Rev": "346938d642f2ec3594ed81d874461961cd0faa76"
 		},
 		{
 			"ImportPath": "github.com/docker/docker/pkg/authorization",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/ioutils",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/longpath",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/plugingetter",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
 		},
 		{
 			"ImportPath": "github.com/docker/docker/pkg/plugins",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
 		},
 		{
-			"ImportPath": "github.com/docker/docker/vendor/src/github.com/Sirupsen/logrus",
-			"Comment": "v1.4.1-8928-g09ad1bb",
-			"Rev": "09ad1bbc5897e34c6e6d5612b0e1ba709ed28a7d"
+			"ImportPath": "github.com/docker/docker/pkg/plugins/transport",
+			"Comment": "docs-v1.12.0-rc4-2016-07-15-6240-ga35a65b78",
+			"Rev": "a35a65b78a4e71ac014150c9f70dc488139235b7"
 		},
 		{
 			"ImportPath": "github.com/docker/go-connections/sockets",
-			"Comment": "v0.1.1-2-g4e42727",
-			"Rev": "4e42727957c146776e5de9cec8c39e4059ed9f20"
+			"Comment": "v0.2.1-14-geb315e3",
+			"Rev": "eb315e36415380e7c2fdee175262560ff42359da"
 		},
 		{
 			"ImportPath": "github.com/docker/go-connections/tlsconfig",
-			"Comment": "v0.1.1-2-g4e42727",
-			"Rev": "4e42727957c146776e5de9cec8c39e4059ed9f20"
-		},
-		{
-			"ImportPath": "github.com/gorilla/context",
-			"Rev": "1c83b3eabd45b6d76072b66b746c20815fb2872d"
+			"Comment": "v0.2.1-14-geb315e3",
+			"Rev": "eb315e36415380e7c2fdee175262560ff42359da"
 		},
 		{
 			"ImportPath": "github.com/gorilla/mux",
-			"Rev": "ee1815431e497d3850809578c93ab6705f1a19f7"
+			"Comment": "v1.3.0-5-g599cba5",
+			"Rev": "599cba5e7b6137d46ddf58fb1765f5d928e69604"
 		},
 		{
 			"ImportPath": "github.com/howeyc/fsnotify",
@@ -54,13 +82,35 @@
 			"Rev": "f0c08ee9c60704c1879025f2ae0ff3e000082c13"
 		},
 		{
-			"ImportPath": "github.com/opencontainers/runc/libcontainer/user",
-			"Comment": "v0.0.6-23-gfa24ebf",
-			"Rev": "fa24ebf26c0a0c26880bd8375b81df8f91a0bbb4"
+			"ImportPath": "github.com/pkg/errors",
+			"Comment": "v0.8.0-3-gbfd5150",
+			"Rev": "bfd5150e4e41705ded2129ec33379de1cb90b513"
+		},
+		{
+			"ImportPath": "github.com/pmezard/go-difflib/difflib",
+			"Comment": "v1.0.0",
+			"Rev": "792786c7400a136282c1664665ae0a8db921c6c2"
 		},
 		{
 			"ImportPath": "github.com/stretchr/testify/assert",
-			"Rev": "dab07ac62d4905d3e48d17dc549c684ac3b7c15a"
+			"Comment": "v1.1.4-27-g4d4bfba",
+			"Rev": "4d4bfba8f1d1027c4fdbe371823030df51419987"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "5602c733f70afc6dcec6766be0d5034d4c4f14de"
+		},
+		{
+			"ImportPath": "golang.org/x/net/proxy",
+			"Rev": "5602c733f70afc6dcec6766be0d5034d4c4f14de"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "f3918c30c5c2cb527c0b071a27c35120a6c0719a"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "f3918c30c5c2cb527c0b071a27c35120a6c0719a"
 		}
 	]
 }
