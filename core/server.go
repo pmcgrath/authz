@@ -3,14 +3,15 @@ package core
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/pkg/authorization"
-	"github.com/docker/docker/pkg/plugins"
-	"github.com/gorilla/mux"
 	"io/ioutil"
 	"net"
 	"net/http"
 	"os"
+
+	"github.com/Sirupsen/logrus"
+	"github.com/docker/docker/pkg/authorization"
+	"github.com/docker/docker/pkg/plugins"
+	"github.com/gorilla/mux"
 )
 
 const (

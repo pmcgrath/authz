@@ -1,10 +1,11 @@
 package authz
 
 import (
-	"github.com/docker/docker/pkg/authorization"
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"testing"
+
+	"github.com/docker/docker/pkg/authorization"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestPolicyApply(t *testing.T) {

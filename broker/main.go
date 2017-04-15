@@ -3,11 +3,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/codegangsta/cli"
+	"os"
+
 	"github.com/Sirupsen/logrus"
+	"github.com/codegangsta/cli"
 	"github.com/twistlock/authz/authz"
 	"github.com/twistlock/authz/core"
-	"os"
 )
 
 const (
