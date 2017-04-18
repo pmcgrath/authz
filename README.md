@@ -95,13 +95,9 @@ The authorization plugin can run as a container application or as a host service
   
 ## Setting up local dev environment
 
-  * Install [go 1.5](https://golang.org/dl/) and [docker](https://docs.docker.com/linux/step_one/).
+  * Install [go](https://golang.org/dl/) and [docker](https://docs.docker.com/engine/getstarted/step_one/).
   * Install [godep](https://github.com/tools/godep).
   * Clone the project.
-  * Restore go dependencies:
-```go
-  $ godep restore
-```
   * Build the binary and image:
 ```go
   $ make all
